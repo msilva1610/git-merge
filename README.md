@@ -60,3 +60,47 @@ Para subir as modificações, execute
 ```
 git push conflito --tags
 ```
+
+## Trabalhar no GIT com ssh
+
+As vantagens de trabalhar no git é a produtividade, pois o git para de pedir usuário e senha
+
+Instalar o xclip no Ubuntu
+```
+sudo apt-get install xclip
+```
+
+Gerar o arquivo ssh no ubuntu
+
+```
+ssh-keygen -t rsa -b 4096 -C "email_do_github"
+ou
+ssh-keygen
+```
+
+Incluir a senha para futura recuperação da chave. Incluir o e-mail do github para lembrar que pertence ao github essa chave
+
+
+### Iniciar o programa ssh-agent caso não esteja iniciado
+```
+eval "${ssh-agent -s}"
+``` 
+
+### E, adiconar a chave no ssh-agent
+
+```
+ssh-add ~/.ssh/id_rsa
+```
+
+### Copiar a chave com o xclip para o clipboard
+```
+xclip -sel clip ~/.ssh/id_rsa.pub
+```
+
+Salvar a chave copiada no ssh do github. Ver em setting, menu lateral.
+
+### Alterar a URL do repositório remoto (local)
+```
+git remote set-url conflito git@github.com:msilva1610/git-merge.git
+```
+Pronto!!!!
