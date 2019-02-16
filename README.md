@@ -16,22 +16,3 @@ git remote -v
 git pull conflito master --allow-unrelated-histories
 git push conflito master
 ```
-
-
-### P2
-```
-git remote add https://github.com/msilva1610/git-merge.git
-```
-
-
-### P3
-```
-git remote -v
-```
-
-
-### P1
-```
-git add .
-```
-
