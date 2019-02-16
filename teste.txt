@@ -1,0 +1,2 @@
+teste txt
+Linha do remote conflito e linha do github
