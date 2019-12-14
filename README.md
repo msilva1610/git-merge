@@ -78,6 +78,11 @@ git fetch --tags
 git reset --hard origin/master
 ```
 
+## Para encontrar as diferenças entre versões (tags), execute:
+``` 
+git diff v.0.0 v.0.1
+```
+
 ## Trabalhar no GIT com ssh
 
 As vantagens de trabalhar no git é a produtividade, pois o git para de pedir usuário e senha
