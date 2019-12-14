@@ -61,6 +61,23 @@ Para subir as modificações, execute
 git push conflito --tags
 ```
 
+## Para fazer um chekout de uma tag, execute:
+```
+git checkout v0.0
+```
+
+## Para reiniciar todas os commits locais, execute:
+```
+git reset -hard
+```
+
+## Para dar um refresh no diretório, execute:
+```
+git fetch --all
+git fetch --tags
+git reset --hard origin/master
+```
+
 ## Trabalhar no GIT com ssh
 
 As vantagens de trabalhar no git é a produtividade, pois o git para de pedir usuário e senha
